@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-list{
+    height: 10vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: rgb(10, 9, 9);
+    font-size: 18px;
+}
+
+.home,
+.about{
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+}
+
+.home-content,
+.about-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(238, 238, 238);
+    img{
+        height: 70%;
+    }
+    h1{
+        font-size: 50px;
+        margin: 30px 0;
+    }
+    p{
+        font-size: 20px;
+    }
+    h1,p{
+        font-family: 'Arbutus Slab', serif;
+    }
+}
+
+.home{
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+}
+
+.about{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+
+@media only screen and (max-width: 425px){
+    .nav-list{
+        width: 100%;
+    }
+    
+    .home-content,
+    .about-content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: rgb(238, 238, 238);
+        img{
+            height: 70%;
+            margin-top: 10px;
+        }
+        h1{
+            font-size: 30px;
+            margin: 0px auto 10px auto;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+
+    .about-content{
+        img{
+            height: 40%;
+        }
+    }
+}
+
+@media only screen and (min-width: 426px){
+    
+    .home-content,
+    .about-content{
+        width: 70%;
+        margin: auto;
+        img{
+            height: 50%;
+        }
+        h1{
+            font-size: 35px;
+            margin: 30px 0;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px){
+
+    .nav-links{
+        font-size: 20px;
+    }
+
+    .home-content,
+    .about-content{
+        h1{
+            font-size: 50px;
+            margin: 30px 0;
+        }
+        p{
+            font-size: 25px;
+        }
+        img{
+            height: 70%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .nav-links{
+        font-size: 25px;
+    }
+
+    .home-content,
+    .about-content{
+        h1{
+            font-size: 65px;
+            margin: 30px 0;
+        }
+        p{
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1441px){
+    .nav-links{
+        font-size: 40px;
+    }
+
+    .home-content,
+    .about-content{
+        h1{
+            font-size: 90px;
+            margin: 30px 0;
+        }
+        p{
+            font-size: 50px;
+        }
+        img{
+            height: 100%;
+        }        
+    }
+}
