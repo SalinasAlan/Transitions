@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --out-dir public"
+    "build": "parcel build index.html",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
+  "homepage":"https://SalinasAlan.github.io/Transitions",
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "gh-pages": "^2.1.0",
     "sass": "^1.22.7"
   },
   "dependencies": {
